@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #10434F;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #10434F;
+}
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 744px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}

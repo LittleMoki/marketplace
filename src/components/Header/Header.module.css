@@ -1,0 +1,136 @@
+.header {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ffffff;
+}
+.header__top__inner_menu {
+    display: none;
+    width: 100%;
+}
+
+.header__top__inner_menu__list {
+    background-color: #10434F;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 75px 20px 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out;
+}
+
+.header__top__inner_menu__list.active {
+    transform: translateX(0);
+}
+
+.header__top__inner_menu__list_item:last-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.header__top__inner_menu__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.header__top__inner_menu__wrapper_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__top_inner {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.header__top__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #10434F;
+}
+
+.header__top__item_select{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #10434F;
+}
+
+.header__top__item svg {
+    width: 18px;
+    height: 18px;
+    font-weight: normal;
+}
+
+.header__bottom {
+    background-color: #10434F;
+}
+
+.header__bottom_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header__bottom_inner__logo_item {
+    cursor: pointer;
+}
+
+.header__bottom_inner__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__bottom_inner__list_item__link {
+    color: #ffffff;
+}
+
+.header__bottom_inner__button_item {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 0;
+    background-color: #ffffff;
+    color: #10434F;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 744px) {
+    .header__bottom {
+        display: none;
+    }
+
+    .header__top__item {
+        display: none;
+    }
+
+    .header__top_inner {
+        justify-content: start;
+    }
+
+    .header__top__inner_menu {
+        display: block;
+    }
+}

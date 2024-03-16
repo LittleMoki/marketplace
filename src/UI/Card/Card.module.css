@@ -1,0 +1,92 @@
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 15px;
+}
+
+.card::after {
+    border-radius: 15px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, 40%, black 130%);
+    bottom: 0;
+    left: 0;
+}
+
+.card__rating {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__rating_favourite {
+    cursor: pointer;
+}
+
+.card__rating_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__content {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.card__content_country__item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.card__content_name_item {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card__content_name_item__span {
+    font-weight: bold;
+}
+
+.card__content_cost {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.card__content_cost svg {
+    position: absolute;
+    right: 0;
+}
+
+.card__content_cost__discount {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.card__content_cost_title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card__content_cost__days {
+    font-size: 16px;
+    font-weight: 500;
+}

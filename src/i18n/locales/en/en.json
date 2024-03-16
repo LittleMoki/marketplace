@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "subtitle": "Discover the world",
+    "title": "Author's tours - New Approach\nTo unexplored travel routes",
+    "button": "Choose a tour"
+  },
+  "tourTitle": {
+    "title": "Where can you go now?",
+    "subtitle": "A selection of popular destinations by type today"
+  },
+  "tourDiscountTitle": {
+    "title": "Tours with discount"
+  }
+}
